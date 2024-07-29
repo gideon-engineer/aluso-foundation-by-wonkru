@@ -1,100 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluso Foundation</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            width: 200px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Aluso Foundation</h1>
-        <p>Enhancing Menstrual Health and Hygiene Awareness in Narok South, Kenya</p>
+        <p>Empowering Girls and Women</p>
     </header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#programs">Our Programs</a>
-        <a href="#education">Menstrual Health Education</a>
-        <a href="#get-involved">Get Involved</a>
-        <a href="#resources">Resources</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact Us</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#our-program">Our Program</a></li>
+            <li><a href="#menstrual-health-education">Menstrual Health Education</a></li>
+            <li><a href="#get-involved">Get Involved</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li>
+                <a href="#other">Other</a>
+                <ul>
+                    <li><a href="#background-information">Background Information</a></li>
+                    <li><a href="#project-rationale">Project Rationale</a></li>
+                    <li><a href="#mission-vision">Mission & Vision</a></li>
+                    <li><a href="#project-description">Project Description</a></li>
+                    <li><a href="#pictorials">Pictorials</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
-    <div class="container" id="home">
-        <h2>Welcome to Aluso Foundation</h2>
-        <p>This website serves as a digital platform to support our mission of ending period poverty and improving menstrual hygiene practices.</p>
-    </div>
-    <div class="container" id="about">
-        <h2>About Us</h2>
-        <h3>Mission & Vision</h3>
-        <p>Our mission is to enhance menstrual health and hygiene awareness.</p>
-        <h3>Our Team</h3>
-        <p>Meet the team dedicated to our cause.</p>
-        <h3>Partners</h3>
-        <p>Our partners who support us. <a href="https://externalpartnerwebsite.com" target="_blank">Visit Partner</a></p>
-    </div>
-    <div class="container" id="programs">
-        <h2>Our Programs</h2>
-        <ul>
-            <li>Sex Education</li>
-            <li>Psychological Counselling</li>
-            <li>Sanitary Materials Distribution</li>
-            <li>Self-Esteem Boosting Initiatives</li>
-        </ul>
-    </div>
-    <div class="container" id="education">
-        <h2>Menstrual Health Education</h2>
-        <ul>
-            <li>Understanding Menstruation</li>
-            <li>Hygiene Practices</li>
-            <li>Myth Busting</li>
-            <li>FAQs</li>
-        </ul>
-    </div>
-    <div class="container" id="get-involved">
-        <h2>Get Involved</h2>
-        <ul>
-            <li>Volunteer</li>
-            <li>Donate</li>
-            <li>Sponsor a Girl</li>
-        </ul>
-    </div>
-    <div class="container" id="resources">
-        <h2>Resources</h2>
-        <ul>
-            <li>Articles</li>
-            <li>Videos</li>
-            <li><a href="files/sample.pdf" target="_blank">Downloadable Materials</a></li>
-        </ul>
-    </div>
-    <div class="container" id="blog">
-        <h2>Blog</h2>
-        <p>Read our latest updates and stories.</p>
-    </div>
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Send</button>
-            </div>
-        </form>
-    </div>
-    <footer class="footer">
-        <p>&copy; 2024 Aluso Foundation. All rights reserved.</p>
+    </body>
+
+    <main>
+        <section class="container" id="home">
+            <h2>Home</h2>
+            <p>Welcome to Aluso Foundation. Empowering girls and women through comprehensive menstrual health and hygiene initiatives.</p>
+        </section>
+        <section class="container" id="about-us">
+            <h2>About Us</h2>
+            <p>At Aluso Foundation, we believe in empowering girls and women through comprehensive menstrual health and hygiene initiatives. Our mission is to create a world where every female, regardless of socio-cultural context, can embrace menstruation as a natural and healthy part of life.</p>
+        </section>
+        <section class="container" id="background-information">
+            <h2>Background Information</h2>
+            <p>Male and female development stages are similar except for distinct changes, which occur in the
+adolescent stage. Females undergo menstruation as an indicator of transition from childhood to
+womanhood. This transition is marked by an important stage known as Menarche (Dhingra et al.,
+2009). After attainment of this stage until menopause, reproductive health and menstrual hygiene
+are significant aspects to the well-being of females. From menarche onwards, due to sensitivity
+and the physical aspect of menstruation, physical, psychological or social problems may result
+from the girl while others may be due to external factors. Whether internally or externally
+instigated, some challenges and experiences more so psychological may have a long-term impact
+on the future of the female child depending on the perception, which varies with the sociocultural background. Menstruation is a normal biological process that occurs within a human life
+span between menarche and menopause and is a key sign of reproductive health. It signifies
+normal biological body functioning in females between puberty and menopause as it suggests the
+body is capable of reproducing. On average, menstruation in most women takes 3-5 days.
+Menstruation is an indicator that the body is ripe for potential pregnancy (Schuiling & Likis,
+2013). The onset and the entire period during menstruation form part of the regular monthly
+menstrual cycle. The menstrual cycle consists of four phases; the follicular phase, ovulation,
+luteal phase and menstruation, which is of major concern in this work due to its physical aspect
+and negative perception in some community settings. Though menstruation associated
+characteristics vary from one female to another, common symptoms include; uterine cramping,
+bloating, mood swings, irritability, headache, tiredness and low back pains (Ellerbrock et al.,
+1996).
+Menstrual hygiene entails women and girls using clean and vital menstrual management
+materials that are comfortable and can be changed in private as often as possible throughout the
+menstruation period. Gender inequality, discriminatory social norms, cultural taboos, poverty
+and lack of basic services like toilets and sanitary products can all make menstrual health and
+hygiene needs go unmet. When menstrual hygiene is not well observed, there is an increased
+number of school dropouts among the girls hence compromising their safety hence stress and
+depression. Poverty is also a major reason for the spread of Sexually transmitted diseases like
+2
+HIV/AIDS, syphilis and Gonorrhoea. Girls whose parents cannot afford sanitary pads are lured
+into premarital sex to get money to purchase sanitary towels hence end up with infections and or
+early marriages and unwanted pregnancies.
+Despite menstruation being a key health indicator, its perception varies regionally depending on
+the culture, and the level of literacy on the subject, which consequently determines the
+management practices and the attitude associated with it. Inadequate knowledge in girls on
+menstrual hygiene management (MHM), coupled with negative stereotyped attitudes toward
+menstruation, has led to collisions in many communities like in Latin America (GonzálezBecerra et al., 2019). Inadequate menstrual knowledge has influenced the lives of girl children
+negatively by lowering self-esteem for teenagers within that window. Low self-esteem affects
+their intrinsic perception of menstruation leading to a sub-optimal performance in academic
+systems, school absenteeism, domestic chores, and social life more so during the menstrual flow.
+Therefore, menstrual hygiene management is a requisite to establish the current menstrual
+landscape (Ngugi, 2014 #5; Tegegne, 2014 #4)..</p>
+            <!-- Add the rest of the background information here -->
+        </section>
+        <section class="container" id="our-program">
+            <h2>Our Program</h2>
+            <p>Our program aims to provide comprehensive support to girls and women in the community through various initiatives including menstrual health education, distribution of sanitary products, and psychological support.</p>
+        </section>
+        <section class="container" id="menstrual-health-education">
+            <h2>Menstrual Health Education</h2>
+            <p>We offer educational sessions to empower girls with knowledge about menstruation, sexual health, and related topics. Our goal is to dispel myths, promote healthy choices, and support girls during their menstrual cycle.</p>
+        </section>
+        <section class="container" id="get-involved">
+            <h2>Get Involved</h2>
+            <p>Join us in our mission to end period poverty and empower girls and women. Find out how you can volunteer, donate, or support our initiatives in various ways.</p>
+        </section>
+        <section class="container" id="resources">
+            <h2>Resources</h2>
+            <p>Access a variety of resources related to menstrual health, hygiene practices, and educational materials to support our mission and initiatives.</p>
+        </section>
+        <section class="container" id="blog">
+            <h2>Blog</h2>
+            <p>Read our latest articles, stories, and updates about our work, menstrual health education, and empowerment initiatives.</p>
+        </section>
+        <section class="container" id="contact-us">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+        <section class="container" id="project-rationale">
+            <h2>Project Rationale</h2>
+            <p>Menstruation, the monthly discharge of blood and mucosal tissues from the inner lining of the uterus, is a natural process that signifies a woman’s reproductive health. Yet, for many girls, it’s far more than biology; it’s a complex experience that intersects with culture, poverty, and societal norms...</p>
+            <!-- Add the detailed project rationale content here -->
+        </section>
+        <section class="container" id="mission-vision">
+            <h2>Mission & Vision</h2>
+            <h3>Mission</h3>
+            <p>To end period Poverty.</p>
+            <h3>Vision</h3>
+            <p>To help improve menstrual Hygiene practices.</p>
+            <h3>Objectives</h3>
+            <ul>
+                <li>To create knowledge and awareness on the importance of menstrual hygiene.</li>
+                <li>To help reduce stigma and stress related to menstruation.</li>
+                <li>To end Period Poverty.</li>
+                <li>To help understand challenges related to menstrual hygiene on girl child.</li>
+                <li>To provide adequate education to community members of the importance of a girl child.</li>
+                <li>Improve school attendance by the girls even during their menstrual moments.</li>
+            </ul>
+        </section>
+        <section class="container" id="project-description">
+            <h2>Project Description</h2>
+            <p>At Aluso Foundation, we recognize that empowering girls goes beyond textbooks and classrooms. Our mission is clear: to enhance the well-being and dignity of teenage girls in Narok South sub-county by addressing critical aspects of menstrual health and thus end period poverty...</p>
+            <h3>Target Schools</h3>
+            <p>We have carefully selected sixteen public primary schools where our impact can be most significant. These schools: Maji Moto, Kuntai, Olenkuluo, Ntuka, Nkineji, Entiapirri, Nkitintini, Nterere, Ilubi, Kipsongol, Oldisare, Ole Pariata, Olenkapune, Oloirien, Nkorkorri, and Olmusakwa represent diverse communities within Narok County.</p>
+            <h3>Our Approach</h3>
+            <ul>
+                <li><strong>Education Sessions:</strong> We believe knowledge is power. In dedicated sessions for girls in grades 6 to 8, we’ll discuss menstruation, sexual health, and related topics. Our aim is to empower girls with accurate information, dispel myths, and promote healthy choices.</li>
+                <li><strong>Psychological Support:</strong> Menstruation isn’t just physical; it impacts emotions and self-esteem. Our trained counsellors will provide support, ensuring that girls navigate this crucial stage confidently.</li>
+                <li><strong>Sanitary Pad Distribution:</strong> We’ll distribute three packets of sanitary pads to each girl. Recognizing the financial strain many families face, these supplies will last them through three menstrual cycles.</li>
+            </ul>
+            <p>Collaborating closely with teachers, we’ll identify 270 girls in grades 6 to 8 per school—those who need our support the most. By focusing on the vulnerable, we maximize our impact. Our initial goal is to enroll 4,050 girls. However, if resources allow, we’re committed to expanding our reach. We believe every girl deserves access to proper menstrual care.</p>
+            <h3>Beyond the Classroom</h3>
+            <ul>
+                <li><strong>Open Discussions:</strong> In small groups of 12 girls, we’ll facilitate open discussions. These roundtable sessions will allow girls to share their challenges during menstruation, fostering empathy and understanding.</li>
+                <li><strong>Tusemane Clubs:</strong> Inspired by the Swahili word for “we talk,” we’ll create safe spaces within schools. Girls-only clubs, guided by health teachers and female educators, will encourage open dialogue about sexuality and menstruation. Girls can freely discuss their experiences and even borrow sanitary pads from peers when needed.</li>
+            </ul>
+            <p>Aluso Foundation envisions a Narok South sub-county where no girl misses school because of her period. We believe that by addressing the critical aspects of menstrual health, we can create a brighter future for every girl in our community.</p>
+        </section>
+        <section class="container" id="pictorials">
+            <h2>Pictorials</h2>
+            <p>Check out our gallery of photos from our events, programs, and initiatives. Witness the impact we’re making in the community through visual stories.</p>
+            <!-- Add photo gallery or links to images here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wonkru inc. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script> <!-- Linking JavaScript file -->
 </body>
+
 </html>
